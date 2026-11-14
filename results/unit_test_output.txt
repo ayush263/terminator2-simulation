@@ -1,0 +1,20 @@
+test_hazard_cost_causes_detour (test_core.TestAStar.test_hazard_cost_causes_detour) ... ok
+test_no_path_returns_none (test_core.TestAStar.test_no_path_returns_none) ... ok
+test_routes_around_wall (test_core.TestAStar.test_routes_around_wall) ... ok
+test_shortest_path_open_grid (test_core.TestAStar.test_shortest_path_open_grid) ... ok
+test_t1000_uses_fence_shortcut (test_core.TestAStar.test_t1000_uses_fence_shortcut) ... ok
+test_agents_do_not_follow_fixed_script (test_core.TestSimulation.test_agents_do_not_follow_fixed_script)
+Different maps -> different trajectories (decisions depend on state). ... ok
+test_all_configs_construct (test_core.TestSimulation.test_all_configs_construct) ... ok
+test_deterministic_given_seed (test_core.TestSimulation.test_deterministic_given_seed) ... ok
+test_invariants_all_versions (test_core.TestSimulation.test_invariants_all_versions) ... ok
+test_pin_rule_slows_t1000 (test_core.TestSimulation.test_pin_rule_slows_t1000) ... ok
+test_buildings_block_movement_and_sight (test_core.TestWorld.test_buildings_block_movement_and_sight) ... ok
+test_every_generated_map_connected (test_core.TestWorld.test_every_generated_map_connected) ... ok
+test_fence_only_passable_for_t1000 (test_core.TestWorld.test_fence_only_passable_for_t1000) ... ok
+test_grid_size_and_bounds (test_core.TestWorld.test_grid_size_and_bounds) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 2.843s
+
+OK

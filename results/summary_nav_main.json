@@ -1,0 +1,174 @@
+{
+ "nav": {
+  "nav-v1": {
+   "n": 200,
+   "ESCAPED": 167,
+   "KILLED": 0,
+   "TIMEOUT": 33,
+   "T1000_DOWN": 0,
+   "survive_rate": 1.0,
+   "escape_ci": [
+    0.7773410172613647,
+    0.8800321587733603
+   ],
+   "kill_ci": [
+    0.0,
+    0.018846005918320894
+   ],
+   "mean_steps": 72.425,
+   "sd_steps": 79.55893648736136,
+   "mean_john_hp": 97.845,
+   "mean_stuck_john": 24.245,
+   "mean_stuck_t800": 0.04,
+   "mean_stuck_t1000": 0,
+   "mean_contacts": 0,
+   "mean_evasions": 0,
+   "mean_t800_shutdown": 0,
+   "mean_t1000_haz": 0,
+   "mean_t800_hits": 0,
+   "mean_john_haz": 0.57
+  },
+  "nav-v2": {
+   "n": 200,
+   "ESCAPED": 200,
+   "KILLED": 0,
+   "TIMEOUT": 0,
+   "T1000_DOWN": 0,
+   "survive_rate": 1.0,
+   "escape_ci": [
+    0.9811539940816791,
+    1.0
+   ],
+   "kill_ci": [
+    0.0,
+    0.018846005918320894
+   ],
+   "mean_steps": 35.78,
+   "sd_steps": 7.052772504483609,
+   "mean_john_hp": 100.0,
+   "mean_stuck_john": 2.11,
+   "mean_stuck_t800": 0,
+   "mean_stuck_t1000": 0,
+   "mean_contacts": 0,
+   "mean_evasions": 0,
+   "mean_t800_shutdown": 0,
+   "mean_t1000_haz": 0,
+   "mean_t800_hits": 0,
+   "mean_john_haz": 0
+  }
+ },
+ "main": {
+  "v1": {
+   "n": 400,
+   "ESCAPED": 30,
+   "KILLED": 175,
+   "TIMEOUT": 0,
+   "T1000_DOWN": 195,
+   "survive_rate": 0.5625,
+   "escape_ci": [
+    0.053037406335715714,
+    0.10504833817401285
+   ],
+   "kill_ci": [
+    0.3897069912730114,
+    0.4864820888019487
+   ],
+   "mean_steps": 19.2225,
+   "sd_steps": 7.109359587895383,
+   "mean_john_hp": 43.3075,
+   "mean_stuck_john": 1.825,
+   "mean_stuck_t800": 0.2025,
+   "mean_stuck_t1000": 2.1675,
+   "mean_contacts": 0.9575,
+   "mean_evasions": 0.1325,
+   "mean_t800_shutdown": 0,
+   "mean_t1000_haz": 0.345,
+   "mean_t800_hits": 6.905,
+   "mean_john_haz": 0.2725
+  },
+  "v2": {
+   "n": 400,
+   "ESCAPED": 66,
+   "KILLED": 154,
+   "TIMEOUT": 0,
+   "T1000_DOWN": 180,
+   "survive_rate": 0.615,
+   "escape_ci": [
+    0.13184448183586026,
+    0.2045289873659258
+   ],
+   "kill_ci": [
+    0.33862235992471207,
+    0.43356554741321446
+   ],
+   "mean_steps": 21.795,
+   "sd_steps": 9.05472114424293,
+   "mean_john_hp": 48.67,
+   "mean_stuck_john": 0.4225,
+   "mean_stuck_t800": 0.035,
+   "mean_stuck_t1000": 0.6375,
+   "mean_contacts": 0.79,
+   "mean_evasions": 0.205,
+   "mean_t800_shutdown": 0,
+   "mean_t1000_haz": 0.005,
+   "mean_t800_hits": 6.8125,
+   "mean_john_haz": 0.0025
+  },
+  "v3": {
+   "n": 400,
+   "ESCAPED": 65,
+   "KILLED": 257,
+   "TIMEOUT": 0,
+   "T1000_DOWN": 78,
+   "survive_rate": 0.3575,
+   "escape_ci": [
+    0.1295868626510332,
+    0.2018341697537513
+   ],
+   "kill_ci": [
+    0.5943808773044147,
+    0.6879080201246762
+   ],
+   "mean_steps": 21.7,
+   "sd_steps": 9.216018663175547,
+   "mean_john_hp": 17.765,
+   "mean_stuck_john": 0.4175,
+   "mean_stuck_t800": 0.0525,
+   "mean_stuck_t1000": 0.4675,
+   "mean_contacts": 1.1675,
+   "mean_evasions": 0.28,
+   "mean_t800_shutdown": 0,
+   "mean_t1000_haz": 0.0075,
+   "mean_t800_hits": 4.165,
+   "mean_john_haz": 0.005
+  },
+  "v4": {
+   "n": 400,
+   "ESCAPED": 108,
+   "KILLED": 171,
+   "TIMEOUT": 0,
+   "T1000_DOWN": 121,
+   "survive_rate": 0.5725,
+   "escape_ci": [
+    0.22883207265888467,
+    0.3155437420169685
+   ],
+   "kill_ci": [
+    0.37993373444987266,
+    0.476445598437081
+   ],
+   "mean_steps": 27.96,
+   "sd_steps": 11.620602394024159,
+   "mean_john_hp": 47.02,
+   "mean_stuck_john": 0.435,
+   "mean_stuck_t800": 0.08,
+   "mean_stuck_t1000": 1.195,
+   "mean_contacts": 1.07,
+   "mean_evasions": 0.5175,
+   "mean_t800_shutdown": 0,
+   "mean_t1000_haz": 0.015,
+   "mean_t800_hits": 5.1925,
+   "mean_john_haz": 0.0225
+  }
+ }
+}

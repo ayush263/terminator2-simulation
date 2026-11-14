@@ -1,0 +1,13 @@
+v1->v2 ESCAPED: 30/400 vs 66/400  p=0.0001
+v1->v2 KILLED: 175/400 vs 154/400  p=0.1313
+v2->v3 KILLED: 154/400 vs 257/400  p=0.0000
+v3->v4 KILLED: 257/400 vs 171/400  p=0.0000
+v3->v4 ESCAPED: 65/400 vs 108/400  p=0.0002
+E2_t1000_ablation: v4-chase vs v4 KILLED: 88/300 vs 135/300  p=0.0001
+E2_t1000_ablation: v4-nointercept vs v4 KILLED: 117/300 vs 135/300  p=0.1365
+E2_t1000_ablation: v4-noflank vs v4 KILLED: 115/300 vs 135/300  p=0.0977
+E3_defender_ablation: v3 vs v4 KILLED: 199/300 vs 135/300  p=0.0000
+E3_defender_ablation: v4-johnastar vs v3 KILLED: 202/300 vs 199/300  p=0.7948
+E3_defender_ablation: v4-follow vs v4 KILLED: 133/300 vs 135/300  p=0.8695
+E4_energy: v4-lowE-unaware vs v4-lowE KILLED: 181/300 vs 191/300  p=0.4003
+E5_blind_search: v4-blind-patrol vs v4-blind KILLED: 79/300 vs 95/300  p=0.1500
