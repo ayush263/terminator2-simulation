@@ -1,0 +1,73 @@
+step,agent,state,action,x,y,target,hp,energy,note
+1,JOHN,TRAVEL,move,7,6,"(12, 29)",100.0,97.0,A* route len=29 cost=29
+1,T-800,FOLLOW,move,6,8,JOHN,100.0,99.0,follow John
+1,T-1000,INTERCEPT,move,0,4,"(7, 29)",120.0,100.0,"intercept John at (7, 29): me 22.0 steps, John 23"
+2,JOHN,TRAVEL,move,8,6,"(12, 29)",100.0,94.0,A* route len=28 cost=28
+2,T-800,FOLLOW,move,6,7,JOHN,100.0,98.0,follow John
+2,T-1000,PURSUE,move,0,6,"(6, 6)",120.0,100.0,"direct chase; est=(6, 6) d=8 stall=0"
+3,JOHN,TRAVEL,move,9,6,"(12, 29)",100.0,91.0,A* route len=27 cost=27
+3,T-800,FOLLOW,move,6,6,JOHN,100.0,97.0,follow John
+3,T-1000,PURSUE,move,1,6,"(6, 6)",120.0,100.0,"flank around T-800; est=(6, 6) d=6 stall=0"
+4,JOHN,TRAVEL,move,10,6,"(12, 29)",100.0,88.0,A* route len=26 cost=26
+4,T-800,PURSUE,move,5,6,T-1000,100.0,96.0,T-1000 in sight
+4,T-1000,INTERCEPT,move,0,7,"(8, 29)",120.0,100.0,"intercept John at (8, 29): me 20.0 steps, John 21"
+5,JOHN,TRAVEL,move,11,6,"(12, 29)",100.0,85.0,A* route len=25 cost=25
+5,T-800,FOLLOW,move,6,6,JOHN,100.0,95.0,follow John
+5,T-1000,INTERCEPT,move,0,8,"(11, 29)",120.0,100.0,"intercept John at (11, 29): me 22.0 steps, John 23"
+6,JOHN,TRAVEL,move,11,7,"(12, 29)",100.0,82.0,A* route len=24 cost=24
+6,T-800,FOLLOW,move,7,6,JOHN,100.0,94.0,follow John
+6,T-1000,INTERCEPT,move,0,10,"(12, 29)",120.0,100.0,"intercept John at (12, 29): me 22.0 steps, John 23"
+7,JOHN,TRAVEL,move,11,8,"(12, 29)",100.0,79.0,A* route len=23 cost=23
+7,T-800,FOLLOW,move,8,6,JOHN,100.0,93.0,follow John
+7,T-1000,INTERCEPT,move,0,11,"(11, 29)",120.0,100.0,"intercept John at (11, 29): me 20.0 steps, John 21"
+8,JOHN,TRAVEL,move,11,9,"(12, 29)",100.0,76.0,A* route len=22 cost=22
+8,T-800,FOLLOW,move,9,6,JOHN,100.0,92.0,follow John
+8,T-1000,INTERCEPT,move,1,12,"(26, 12)",120.0,100.0,"intercept John at (26, 12): me 18.0 steps, John 19"
+9,JOHN,TRAVEL,move,11,10,"(12, 29)",100.0,73.0,A* route len=21 cost=21
+9,T-800,FOLLOW,move,10,6,JOHN,100.0,91.0,follow John
+9,T-1000,INTERCEPT,move,2,12,"(25, 12)",120.0,100.0,"intercept John at (25, 12): me 16.0 steps, John 17"
+10,JOHN,TRAVEL,move,11,11,"(12, 29)",100.0,70.0,A* route len=20 cost=20
+10,T-800,FOLLOW,move,11,6,JOHN,100.0,90.0,follow John
+10,T-1000,INTERCEPT,move,4,12,"(26, 12)",120.0,100.0,"intercept John at (26, 12): me 16.0 steps, John 17"
+11,JOHN,TRAVEL,move,11,12,"(12, 29)",100.0,67.0,A* route len=19 cost=19
+11,T-800,FOLLOW,move,11,7,JOHN,100.0,89.0,follow John
+11,T-1000,PURSUE,move,5,12,"(11, 12)",120.0,100.0,"direct chase; est=(11, 12) d=7 stall=0"
+12,JOHN,TRAVEL,move,11,13,"(12, 29)",100.0,64.0,A* route len=18 cost=18
+12,T-800,FOLLOW,move,11,8,JOHN,100.0,88.0,follow John
+12,T-1000,PURSUE,move,7,12,"(11, 12)",120.0,100.0,"direct chase; est=(11, 12) d=6 stall=0"
+13,JOHN,TRAVEL,move,11,14,"(12, 29)",100.0,61.0,A* route len=17 cost=17
+13,T-800,FOLLOW,move,11,9,JOHN,100.0,87.0,follow John
+13,T-1000,PURSUE,move,8,12,"(11, 12)",120.0,100.0,"direct chase; est=(11, 12) d=4 stall=0"
+14,JOHN,TRAVEL,move,11,15,"(12, 29)",100.0,58.0,A* route len=16 cost=16
+14,T-800,FOLLOW,move,11,10,JOHN,100.0,86.0,follow John
+14,T-1000,PURSUE,move,10,12,"(11, 12)",120.0,100.0,"flank around T-800; est=(11, 12) d=3 stall=0"
+15,JOHN,TRAVEL,move,11,16,"(12, 29)",100.0,55.0,A* route len=15 cost=15
+15,T-800,PURSUE,move,11,11,T-1000,96.0,82.0,T-1000 in sight
+15,T-1000,PURSUE,move,11,12,"(11, 12)",110.0,100.0,"flank around T-800; est=(11, 12) d=1 stall=0"
+16,JOHN,TRAVEL,move,11,17,"(12, 29)",100.0,52.0,A* route len=14 cost=14
+16,T-800,ATTACK,attack,11,11,T-1000,96.0,82.0,T-1000 adjacent
+16,T-1000,PURSUE,move,11,14,"(11, 17)",110.5,100.0,"flank around T-800; est=(11, 17) d=5 stall=1"
+17,JOHN,TRAVEL,move,11,18,"(12, 29)",100.0,49.0,A* route len=13 cost=13
+17,T-800,PURSUE,move,11,12,T-1000,96.0,81.0,T-1000 in sight
+17,T-1000,PURSUE,move,11,15,"(11, 18)",111.0,100.0,"flank around T-800; est=(11, 18) d=4 stall=3"
+18,JOHN,TRAVEL,move,11,19,"(12, 29)",100.0,46.0,A* route len=12 cost=12
+18,T-800,PURSUE,move,11,13,T-1000,96.0,80.0,T-1000 in sight
+18,T-1000,PURSUE,move,11,17,"(11, 19)",111.5,100.0,"flank around T-800; est=(11, 19) d=4 stall=4"
+19,JOHN,TRAVEL,move,11,20,"(12, 29)",100.0,43.0,A* route len=11 cost=11
+19,T-800,PURSUE,move,11,14,T-1000,96.0,79.0,T-1000 in sight
+19,T-1000,PURSUE,move,11,18,"(11, 20)",112.0,100.0,"flank around T-800; est=(11, 20) d=3 stall=6"
+20,JOHN,TRAVEL,move,11,21,"(12, 29)",77.0,40.0,A* route len=10 cost=10
+20,T-800,PURSUE,move,11,15,T-1000,96.0,78.0,T-1000 in sight
+20,T-1000,PURSUE,move,11,20,"(11, 21)",112.5,100.0,"flank around T-800; est=(11, 21) d=3 stall=7"
+21,JOHN,TRAVEL,move,11,22,"(12, 29)",52.0,37.0,A* route len=9 cost=9
+21,T-800,PURSUE,move,11,16,T-1000,96.0,77.0,T-1000 in sight
+21,T-1000,PURSUE,move,11,21,"(11, 22)",113.0,100.0,"flank around T-800; est=(11, 22) d=2 stall=9"
+22,JOHN,TRAVEL,move,11,23,"(12, 29)",35.0,34.0,A* route len=8 cost=8
+22,T-800,PURSUE,move,11,17,T-1000,96.0,76.0,T-1000 in sight
+22,T-1000,PURSUE,move,11,22,"(11, 23)",113.5,100.0,"flank around T-800; est=(11, 23) d=2 stall=0"
+23,JOHN,TRAVEL,move,11,24,"(12, 29)",10.0,31.0,A* route len=7 cost=7
+23,T-800,PURSUE,move,11,18,T-1000,96.0,75.0,T-1000 in sight
+23,T-1000,PURSUE,move,11,23,"(11, 24)",114.0,100.0,"flank around T-800; est=(11, 24) d=2 stall=1"
+24,JOHN,TRAVEL,move,11,25,"(12, 29)",-11.0,28.0,A* route len=6 cost=6
+24,T-800,PURSUE,move,11,19,T-1000,96.0,74.0,T-1000 in sight
+24,T-1000,PURSUE,move,11,24,"(11, 25)",114.5,100.0,"flank around T-800; est=(11, 25) d=2 stall=2"

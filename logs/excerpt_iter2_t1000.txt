@@ -1,0 +1,11 @@
+1 | INTERCEPT | 17 | 6 | 120.0 | intercept John at (9, 18): me 14.0 steps, John 15
+3 | INTERCEPT | 14 | 6 | 120.0 | intercept John at (9, 18): me 12.0 steps, John 13
+5 | INTERCEPT | 11 | 6 | 120.0 | intercept John at (9, 18): me 10.0 steps, John 11
+7 | INTERCEPT | 11 | 9 | 120.0 | intercept John at (9, 18): me 8.0 steps, John 9
+9 | PURSUE | 10 | 11 | 120.0 | flank around T-800; est=(6, 14) d=8 stall=1
+11 | INTERCEPT | 10 | 12 | 120.0 | intercept John at (10, 18): me 4.7 steps, John 6
+13 | PURSUE | 12 | 13 | 120.0 | flank around T-800; est=(8, 16) d=8 stall=2
+15 | PURSUE | 12 | 16 | 120.0 | flank around T-800; est=(8, 18) d=7 stall=5
+17 | PURSUE | 11 | 18 | 120.0 | flank around T-800; est=(10, 18) d=2 stall=0
+19 | KILL | 11 | 18 | 120.0 | John adjacent
+21 | KILL | 11 | 18 | 98.5 | John adjacent

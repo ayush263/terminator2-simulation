@@ -1,0 +1,33 @@
+1 | ESCORT | 6 | 8 | 100.0 | 99.0 | close up on John
+2 | ESCORT | 6 | 7 | 100.0 | 98.0 | close up on John
+3 | ESCORT | 6 | 6 | 100.0 | 97.0 | close up on John
+4 | ENGAGE | 5 | 6 | 100.0 | 96.0 | charge T-1000 at (1, 6)
+5 | ESCORT | 6 | 6 | 100.0 | 95.0 | close up on John
+6 | ESCORT | 7 | 6 | 100.0 | 94.0 | close up on John
+7 | ESCORT | 8 | 6 | 100.0 | 93.0 | close up on John
+8 | ESCORT | 9 | 6 | 100.0 | 92.0 | close up on John
+9 | ESCORT | 10 | 6 | 100.0 | 91.0 | close up on John
+10 | ESCORT | 11 | 6 | 100.0 | 90.0 | close up on John
+11 | ESCORT | 11 | 7 | 100.0 | 89.0 | close up on John
+12 | ESCORT | 11 | 8 | 100.0 | 88.0 | close up on John
+13 | ESCORT | 11 | 9 | 100.0 | 87.0 | close up on John
+14 | ESCORT | 11 | 10 | 100.0 | 86.0 | close up on John
+15 | ESCORT | 11 | 11 | 100.0 | 85.0 | close up on John
+16 | ENGAGE | 10 | 11 | 100.0 | 84.0 | charge T-1000 at (6, 11)
+17 | ESCORT | 10 | 12 | 100.0 | 83.0 | close up on John
+18 | ESCORT | 11 | 12 | 100.0 | 82.0 | close up on John
+19 | ESCORT | 12 | 12 | 100.0 | 81.0 | close up on John
+20 | ESCORT | 13 | 12 | 100.0 | 80.0 | close up on John
+21 | ESCORT | 14 | 12 | 100.0 | 79.0 | close up on John
+22 | ESCORT | 15 | 12 | 100.0 | 78.0 | close up on John
+23 | ESCORT | 16 | 12 | 100.0 | 77.0 | close up on John
+24 | ESCORT | 17 | 12 | 100.0 | 76.0 | close up on John
+25 | ESCORT | 18 | 12 | 100.0 | 75.0 | close up on John
+26 | ESCORT | 19 | 12 | 100.0 | 74.0 | close up on John
+27 | ESCORT | 20 | 12 | 100.0 | 73.0 | close up on resting John
+28 | ESCORT | 21 | 12 | 100.0 | 72.0 | close up on resting John
+29 | ESCORT | 22 | 12 | 100.0 | 71.0 | close up on resting John
+30 | ESCORT | 23 | 12 | 100.0 | 70.0 | close up on resting John
+31 | ESCORT | 24 | 12 | 100.0 | 69.0 | close up on John
+32 | ESCORT | 25 | 12 | 100.0 | 68.0 | close up on John
+33 | ESCORT | 26 | 12 | 100.0 | 67.0 | close up on John

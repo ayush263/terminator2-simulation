@@ -1,0 +1,115 @@
+step,agent,state,action,x,y,target,hp,energy,note
+1,JOHN,TRAVEL,move,0,1,"(29, 3)",100.0,97.0,"exit (29, 3) len=34 cost=34 risk_pen=0"
+1,T-800,ESCORT,move,1,5,"(2, 0)",100.0,99.0,scout ahead on John's route
+1,T-1000,PURSUE,move,8,6,JOHN,120.0,100.0,greedy to last known John
+2,JOHN,TRAVEL,move,0,0,"(29, 3)",100.0,94.0,"exit (29, 3) len=33 cost=33 risk_pen=57"
+2,T-800,INTERCEPT,move,1,6,"(3, 6)",100.0,98.0,"cut off T-1000 at (3, 6) (t800 3 <= t1000 3.3+1)"
+2,T-1000,PURSUE,move,6,6,JOHN,120.0,100.0,greedy to last known John
+3,JOHN,TRAVEL,move,1,0,"(29, 3)",100.0,91.0,"exit (29, 3) len=32 cost=32 risk_pen=50"
+3,T-800,INTERCEPT,move,2,6,"(2, 6)",100.0,97.0,"cut off T-1000 at (2, 6) (t800 1 <= t1000 2.7+1)"
+3,T-1000,PURSUE,move,5,6,JOHN,120.0,100.0,greedy to last known John
+4,JOHN,TRAVEL,move,2,0,"(29, 3)",100.0,88.0,"exit (29, 3) len=31 cost=31 risk_pen=45"
+4,T-800,GUARD,move,2,5,"(2, 0)",100.0,96.0,move between John and threat
+4,T-1000,PURSUE,move,3,6,JOHN,120.0,100.0,greedy to last known John
+5,JOHN,COVER,move,1,0,"(1, 5)",100.0,85.0,seek cover behind T-800 (threat d=7)
+5,T-800,ATTACK,attack,2,5,T-1000,100.0,93.0,T-1000 adjacent
+5,T-1000,PURSUE,move,2,6,JOHN,107.0,100.0,greedy to last known John
+6,JOHN,COVER,move,0,0,"(1, 5)",100.0,82.0,seek cover behind T-800 (threat d=7)
+6,T-800,ATTACK,attack,2,5,T-1000,100.0,93.0,T-1000 adjacent
+6,T-1000,PURSUE,move,0,6,JOHN,107.5,100.0,greedy to last known John
+7,JOHN,COVER,move,0,1,"(3, 5)",100.0,79.0,seek cover behind T-800 (threat d=6)
+7,T-800,GUARD,move,1,5,"(0, 1)",100.0,92.0,move between John and threat
+7,T-1000,PURSUE,move,0,5,JOHN,108.0,100.0,greedy to last known John
+8,JOHN,COVER,move,0,0,"(2, 6)",100.0,76.0,seek cover behind T-800 (threat d=4)
+8,T-800,ATTACK,attack,1,5,T-1000,100.0,92.0,T-1000 adjacent
+8,T-1000,PURSUE,move,0,3,JOHN,108.5,100.0,greedy to last known John
+9,JOHN,COVER,move,1,0,"(2, 6)",100.0,73.0,seek cover behind T-800 (threat d=3)
+9,T-800,GUARD,move,0,5,"(0, 1)",100.0,91.0,move between John and threat
+9,T-1000,PURSUE,move,0,2,JOHN,109.0,100.0,greedy to last known John
+10,JOHN,COVER,move,2,0,"(1, 6)",100.0,70.0,seek cover behind T-800 (threat d=3)
+10,T-800,GUARD,move,0,4,"(0, 1)",100.0,90.0,move between John and threat
+10,T-1000,PURSUE,move,0,0,JOHN,109.5,100.0,greedy to last known John
+11,JOHN,FLEE,move,3,0,"(29, 3)",100.0,67.0,"exit (29, 3) len=30 cost=45 risk_pen=32"
+11,T-800,GUARD,move,0,3,"(1, 0)",100.0,89.0,move between John and threat
+11,T-1000,PURSUE,move,1,0,JOHN,110.0,100.0,greedy to last known John
+12,JOHN,FLEE,move,4,0,"(29, 3)",100.0,64.0,"exit (29, 3) len=29 cost=44 risk_pen=31"
+12,T-800,GUARD,move,0,2,"(2, 0)",100.0,88.0,move between John and threat
+12,T-1000,PURSUE,move,3,0,JOHN,110.5,100.0,greedy to last known John
+13,JOHN,FLEE,move,5,0,"(29, 3)",100.0,61.0,"exit (29, 3) len=28 cost=53 risk_pen=32"
+13,T-800,GUARD,move,0,3,"(5, 0)",100.0,87.0,move between John and threat
+13,T-1000,KILL,attack,3,0,JOHN,111.0,100.0,John adjacent
+14,JOHN,FLEE,move,6,0,"(29, 3)",100.0,58.0,"exit (29, 3) len=27 cost=42 risk_pen=29"
+14,T-800,GUARD,move,0,2,"(4, 0)",100.0,86.0,move between John and threat
+14,T-1000,PURSUE,move,5,0,JOHN,111.5,100.0,greedy to last known John
+15,JOHN,FLEE,move,7,0,"(29, 3)",100.0,55.0,"exit (29, 3) len=26 cost=51 risk_pen=30"
+15,T-800,GUARD,move,0,3,"(5, 1)",100.0,85.0,move between John and threat
+15,T-1000,KILL,attack,5,0,JOHN,112.0,100.0,John adjacent
+16,JOHN,FLEE,move,8,0,"(29, 3)",100.0,52.0,"exit (29, 3) len=25 cost=40 risk_pen=27"
+16,T-800,GUARD,move,0,4,"(6, 0)",100.0,84.0,move between John and threat
+16,T-1000,PURSUE,move,7,0,JOHN,112.5,100.0,greedy to last known John
+17,JOHN,FLEE,move,9,0,"(29, 3)",100.0,49.0,"exit (29, 3) len=24 cost=49 risk_pen=28"
+17,T-800,GUARD,move,0,5,"(9, 0)",100.0,83.0,move between John and threat
+17,T-1000,KILL,attack,7,0,JOHN,113.0,100.0,John adjacent
+18,JOHN,FLEE,move,10,0,"(29, 3)",100.0,46.0,"exit (29, 3) len=23 cost=38 risk_pen=25"
+18,T-800,GUARD,move,0,4,"(8, 0)",100.0,82.0,move between John and threat
+18,T-1000,PURSUE,move,9,0,JOHN,113.5,100.0,greedy to last known John
+19,JOHN,FLEE,move,11,0,"(29, 3)",100.0,43.0,"exit (29, 3) len=22 cost=47 risk_pen=26"
+19,T-800,GUARD,move,0,5,"(11, 0)",100.0,81.0,move between John and threat
+19,T-1000,KILL,attack,9,0,JOHN,114.0,100.0,John adjacent
+20,JOHN,FLEE,move,12,0,"(29, 3)",100.0,40.0,"exit (29, 3) len=21 cost=36 risk_pen=23"
+20,T-800,GUARD,move,0,4,"(10, 0)",100.0,80.0,move between John and threat
+20,T-1000,PURSUE,move,11,0,JOHN,114.5,100.0,greedy to last known John
+21,JOHN,FLEE,move,13,0,"(29, 3)",100.0,37.0,"exit (29, 3) len=20 cost=45 risk_pen=24"
+21,T-800,GUARD,move,0,5,"(11, 1)",100.0,79.0,move between John and threat
+21,T-1000,KILL,attack,11,0,JOHN,115.0,100.0,John adjacent
+22,JOHN,FLEE,move,14,0,"(29, 3)",100.0,34.0,"exit (29, 3) len=19 cost=34 risk_pen=21"
+22,T-800,GUARD,move,1,5,"(12, 0)",100.0,78.0,move between John and threat
+22,T-1000,PURSUE,move,13,0,JOHN,115.5,100.0,greedy to last known John
+23,JOHN,FLEE,move,15,0,"(29, 3)",100.0,31.0,"exit (29, 3) len=18 cost=43 risk_pen=22"
+23,T-800,GUARD,move,2,5,"(15, 0)",100.0,77.0,move between John and threat
+23,T-1000,KILL,attack,13,0,JOHN,116.0,100.0,John adjacent
+24,JOHN,FLEE,move,16,0,"(29, 3)",100.0,28.0,"exit (29, 3) len=17 cost=32 risk_pen=19"
+24,T-800,GUARD,move,3,5,"(14, 0)",100.0,76.0,move between John and threat
+24,T-1000,PURSUE,move,15,0,JOHN,116.5,100.0,greedy to last known John
+25,JOHN,FLEE,move,17,0,"(29, 3)",100.0,25.0,"exit (29, 3) len=16 cost=41 risk_pen=20"
+25,T-800,GUARD,move,4,5,"(17, 0)",100.0,75.0,move between John and threat
+25,T-1000,KILL,attack,15,0,JOHN,117.0,100.0,John adjacent
+26,JOHN,FLEE,move,18,0,"(29, 3)",100.0,22.0,"exit (29, 3) len=15 cost=30 risk_pen=17"
+26,T-800,GUARD,move,5,5,"(16, 0)",100.0,74.0,move between John and threat
+26,T-1000,PURSUE,move,17,0,JOHN,117.5,100.0,greedy to last known John
+27,JOHN,FLEE,move,19,0,"(29, 3)",100.0,19.0,"exit (29, 3) len=14 cost=39 risk_pen=18"
+27,T-800,GUARD,move,6,5,"(17, 1)",100.0,73.0,move between John and threat
+27,T-1000,KILL,attack,17,0,JOHN,118.0,100.0,John adjacent
+28,JOHN,FLEE,move,20,0,"(29, 3)",100.0,16.0,"exit (29, 3) len=13 cost=28 risk_pen=15"
+28,T-800,GUARD,move,7,5,"(18, 0)",100.0,72.0,move between John and threat
+28,T-1000,PURSUE,move,19,0,JOHN,118.5,100.0,greedy to last known John
+29,JOHN,FLEE,move,21,0,"(29, 3)",100.0,13.0,"exit (29, 3) len=12 cost=37 risk_pen=16"
+29,T-800,GUARD,move,8,5,"(21, 0)",100.0,71.0,move between John and threat
+29,T-1000,KILL,attack,19,0,JOHN,119.0,100.0,John adjacent
+30,JOHN,FLEE,move,22,0,"(29, 3)",100.0,10.0,"exit (29, 3) len=11 cost=26 risk_pen=13"
+30,T-800,GUARD,move,9,5,"(20, 0)",100.0,70.0,move between John and threat
+30,T-1000,PURSUE,move,21,0,JOHN,119.5,100.0,greedy to last known John
+31,JOHN,FLEE,move,23,0,"(29, 3)",100.0,7.0,"exit (29, 3) len=10 cost=35 risk_pen=14"
+31,T-800,GUARD,move,10,5,"(23, 0)",100.0,69.0,move between John and threat
+31,T-1000,KILL,attack,21,0,JOHN,120.0,100.0,John adjacent
+32,JOHN,FLEE,move,24,0,"(29, 3)",100.0,4.0,"exit (29, 3) len=9 cost=24 risk_pen=11"
+32,T-800,GUARD,move,11,5,"(22, 0)",100.0,68.0,move between John and threat
+32,T-1000,PURSUE,move,23,0,JOHN,120.0,100.0,greedy to last known John
+33,JOHN,FLEE,move,24,0,"(29, 3)",77.0,9.0,"exit (29, 3) len=8 cost=33 risk_pen=12"
+33,T-800,GUARD,move,12,5,"(23, 1)",100.0,67.0,move between John and threat
+33,T-1000,KILL,attack,23,0,JOHN,120.0,100.0,John adjacent
+34,JOHN,FLEE,move,25,0,"(29, 3)",60.0,6.0,"exit (29, 3) len=8 cost=33 risk_pen=12"
+34,T-800,GUARD,move,13,5,"(23, 1)",100.0,66.0,move between John and threat
+34,T-1000,KILL,attack,24,0,JOHN,120.0,100.0,John adjacent
+35,JOHN,FLEE,move,25,0,"(29, 3)",45.0,11.0,"exit (29, 3) len=7 cost=32 risk_pen=11"
+35,T-800,GUARD,move,14,5,"(24, 1)",100.0,65.0,move between John and threat
+35,T-1000,KILL,attack,24,0,JOHN,120.0,100.0,John adjacent
+36,JOHN,FLEE,move,26,0,"(29, 3)",26.0,8.0,"exit (29, 3) len=7 cost=32 risk_pen=11"
+36,T-800,GUARD,move,15,5,"(24, 1)",100.0,64.0,move between John and threat
+36,T-1000,KILL,attack,25,0,JOHN,120.0,100.0,John adjacent
+37,JOHN,FLEE,move,26,0,"(29, 3)",1.0,13.0,"exit (29, 3) len=6 cost=31 risk_pen=10"
+37,T-800,GUARD,move,16,5,"(27, 0)",100.0,63.0,move between John and threat
+37,T-1000,KILL,attack,25,0,JOHN,120.0,100.0,John adjacent
+38,JOHN,FLEE,move,27,0,"(29, 3)",-18.0,10.0,"exit (29, 3) len=6 cost=31 risk_pen=10"
+38,T-800,GUARD,move,17,5,"(27, 0)",100.0,62.0,move between John and threat
+38,T-1000,KILL,attack,26,0,JOHN,120.0,100.0,John adjacent

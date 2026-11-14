@@ -1,0 +1,100 @@
+step,agent,state,action,x,y,target,hp,energy,note
+1,JOHN,TRAVEL,move,7,6,"(29, 12)",100.0,97.0,"exit (29, 12) len=29 cost=29 risk_pen=0"
+1,T-800,ESCORT,move,6,8,JOHN,100.0,99.0,close up on John
+1,T-1000,INTERCEPT,move,0,4,"(7, 29)",120.0,100.0,"intercept John at (7, 29): me 22.0 steps, John 23"
+2,JOHN,TRAVEL,move,8,6,"(29, 12)",100.0,94.0,"exit (29, 12) len=28 cost=28 risk_pen=0"
+2,T-800,ESCORT,move,6,7,JOHN,100.0,98.0,close up on John
+2,T-1000,PURSUE,move,0,6,"(6, 6)",120.0,100.0,"direct chase; est=(6, 6) d=8 stall=0"
+3,JOHN,TRAVEL,move,9,6,"(29, 12)",100.0,91.0,"exit (29, 12) len=27 cost=27 risk_pen=0"
+3,T-800,ESCORT,move,6,6,JOHN,100.0,97.0,close up on John
+3,T-1000,PURSUE,move,1,6,"(6, 6)",120.0,100.0,"flank around T-800; est=(6, 6) d=6 stall=0"
+4,JOHN,FLEE,move,10,6,"(29, 12)",100.0,88.0,"exit (29, 12) len=26 cost=26 risk_pen=16"
+4,T-800,ENGAGE,move,5,6,T-1000,100.0,96.0,"charge T-1000 at (1, 6)"
+4,T-1000,INTERCEPT,move,0,7,"(8, 29)",120.0,100.0,"intercept John at (8, 29): me 20.0 steps, John 21"
+5,JOHN,TRAVEL,move,11,6,"(29, 12)",100.0,85.0,"exit (29, 12) len=25 cost=25 risk_pen=13"
+5,T-800,ESCORT,move,6,6,JOHN,100.0,95.0,close up on John
+5,T-1000,INTERCEPT,move,0,8,"(11, 29)",120.0,100.0,"intercept John at (11, 29): me 22.0 steps, John 23"
+6,JOHN,TRAVEL,move,11,7,"(29, 12)",100.0,82.0,"exit (29, 12) len=24 cost=24 risk_pen=10"
+6,T-800,ESCORT,move,7,6,JOHN,100.0,94.0,close up on John
+6,T-1000,INTERCEPT,move,0,10,"(12, 29)",120.0,100.0,"intercept John at (12, 29): me 22.0 steps, John 23"
+7,JOHN,TRAVEL,move,11,8,"(29, 12)",100.0,79.0,"exit (29, 12) len=23 cost=23 risk_pen=7"
+7,T-800,ESCORT,move,8,6,JOHN,100.0,93.0,close up on John
+7,T-1000,INTERCEPT,move,0,11,"(11, 29)",120.0,100.0,"intercept John at (11, 29): me 20.0 steps, John 21"
+8,JOHN,TRAVEL,move,11,9,"(29, 12)",100.0,76.0,"exit (29, 12) len=22 cost=22 risk_pen=4"
+8,T-800,ESCORT,move,9,6,JOHN,100.0,92.0,close up on John
+8,T-1000,INTERCEPT,move,1,12,"(26, 12)",120.0,100.0,"intercept John at (26, 12): me 18.0 steps, John 19"
+9,JOHN,TRAVEL,move,11,10,"(29, 12)",100.0,73.0,"exit (29, 12) len=21 cost=21 risk_pen=1"
+9,T-800,ESCORT,move,10,6,JOHN,100.0,91.0,close up on John
+9,T-1000,INTERCEPT,move,2,12,"(25, 12)",120.0,100.0,"intercept John at (25, 12): me 16.0 steps, John 17"
+10,JOHN,TRAVEL,move,11,11,"(29, 12)",100.0,70.0,"exit (29, 12) len=20 cost=20 risk_pen=0"
+10,T-800,ESCORT,move,11,6,JOHN,100.0,90.0,close up on John
+10,T-1000,INTERCEPT,move,4,12,"(26, 12)",120.0,100.0,"intercept John at (26, 12): me 16.0 steps, John 17"
+11,JOHN,TRAVEL,move,11,12,"(29, 12)",100.0,67.0,"exit (29, 12) len=19 cost=19 risk_pen=0"
+11,T-800,ESCORT,move,11,7,JOHN,100.0,89.0,close up on John
+11,T-1000,PURSUE,move,5,12,"(11, 12)",120.0,100.0,"direct chase; est=(11, 12) d=7 stall=0"
+12,JOHN,FLEE,move,12,12,"(29, 12)",100.0,64.0,"exit (29, 12) len=18 cost=18 risk_pen=12"
+12,T-800,ESCORT,move,11,8,JOHN,100.0,88.0,close up on John
+12,T-1000,PURSUE,move,7,12,"(12, 12)",120.0,100.0,"direct chase; est=(12, 12) d=7 stall=1"
+13,JOHN,FLEE,move,13,12,"(29, 12)",100.0,61.0,"exit (29, 12) len=17 cost=17 risk_pen=13"
+13,T-800,ESCORT,move,11,9,JOHN,100.0,87.0,close up on John
+13,T-1000,PURSUE,move,8,12,"(13, 12)",120.0,100.0,"direct chase; est=(13, 12) d=6 stall=1"
+14,JOHN,FLEE,move,14,12,"(29, 12)",100.0,58.0,"exit (29, 12) len=16 cost=16 risk_pen=12"
+14,T-800,ESCORT,move,11,10,JOHN,100.0,86.0,close up on John
+14,T-1000,PURSUE,move,6,12,"(14, 12)",120.0,100.0,"flank around T-800; est=(14, 12) d=6 stall=2"
+15,JOHN,FLEE,move,15,12,"(29, 12)",100.0,55.0,"exit (29, 12) len=15 cost=15 risk_pen=9"
+15,T-800,ESCORT,move,11,11,JOHN,100.0,85.0,close up on John
+15,T-1000,PURSUE,move,6,11,"(14, 12)",120.0,100.0,"flank around T-800; est=(14, 12) d=8 stall=4"
+16,JOHN,TRAVEL,move,16,12,"(29, 12)",100.0,52.0,"exit (29, 12) len=14 cost=14 risk_pen=0"
+16,T-800,ENGAGE,move,10,11,T-1000,100.0,84.0,"charge T-1000 at (6, 11)"
+16,T-1000,PURSUE,move,6,9,"(18, 10)",120.0,100.0,"flank around T-800; est=(18, 10) d=13 stall=5"
+17,JOHN,TRAVEL,move,17,12,"(29, 12)",100.0,49.0,"exit (29, 12) len=13 cost=13 risk_pen=0"
+17,T-800,ESCORT,move,10,12,JOHN,100.0,83.0,close up on John
+17,T-1000,PURSUE,move,6,8,"(18, 10)",120.0,100.0,"flank around T-800; est=(18, 10) d=13 stall=7"
+18,JOHN,TRAVEL,move,18,12,"(29, 12)",100.0,46.0,"exit (29, 12) len=12 cost=12 risk_pen=0"
+18,T-800,ESCORT,move,11,12,JOHN,100.0,82.0,close up on John
+18,T-1000,PURSUE,move,6,6,"(18, 10)",120.0,100.0,"flank around T-800; est=(18, 10) d=14 stall=8"
+19,JOHN,TRAVEL,move,19,12,"(29, 12)",100.0,43.0,"exit (29, 12) len=11 cost=11 risk_pen=0"
+19,T-800,ESCORT,move,12,12,JOHN,100.0,81.0,close up on John
+19,T-1000,PURSUE,move,7,6,"(18, 10)",120.0,100.0,"flank around T-800; est=(18, 10) d=16 stall=0"
+20,JOHN,TRAVEL,move,20,12,"(29, 12)",100.0,40.0,"exit (29, 12) len=10 cost=10 risk_pen=0"
+20,T-800,ESCORT,move,13,12,JOHN,100.0,80.0,close up on John
+20,T-1000,PURSUE,move,9,6,"(18, 10)",120.0,100.0,"direct chase; est=(18, 10) d=15 stall=1"
+21,JOHN,TRAVEL,move,21,12,"(29, 12)",100.0,37.0,"exit (29, 12) len=9 cost=9 risk_pen=0"
+21,T-800,ESCORT,move,14,12,JOHN,100.0,79.0,close up on John
+21,T-1000,PURSUE,move,10,6,"(18, 10)",120.0,100.0,"direct chase; est=(18, 10) d=13 stall=3"
+22,JOHN,TRAVEL,move,22,12,"(29, 12)",100.0,34.0,"exit (29, 12) len=8 cost=8 risk_pen=0"
+22,T-800,ESCORT,move,15,12,JOHN,100.0,78.0,close up on John
+22,T-1000,PURSUE,move,12,6,"(18, 10)",120.0,100.0,"direct chase; est=(18, 10) d=12 stall=4"
+23,JOHN,TRAVEL,move,23,12,"(29, 12)",100.0,31.0,"exit (29, 12) len=7 cost=7 risk_pen=0"
+23,T-800,ESCORT,move,16,12,JOHN,100.0,77.0,close up on John
+23,T-1000,PURSUE,move,13,6,"(18, 10)",120.0,100.0,"direct chase; est=(18, 10) d=10 stall=6"
+24,JOHN,TRAVEL,move,24,12,"(29, 12)",100.0,28.0,"exit (29, 12) len=6 cost=6 risk_pen=0"
+24,T-800,ESCORT,move,17,12,JOHN,100.0,76.0,close up on John
+24,T-1000,PURSUE,move,15,6,"(23, 13)",120.0,100.0,"direct chase; est=(23, 13) d=17 stall=7"
+25,JOHN,TRAVEL,move,25,12,"(29, 12)",100.0,25.0,"exit (29, 12) len=5 cost=5 risk_pen=0"
+25,T-800,ESCORT,move,18,12,JOHN,100.0,75.0,close up on John
+25,T-1000,PURSUE,move,16,6,"(23, 13)",120.0,100.0,"direct chase; est=(23, 13) d=15 stall=9"
+26,JOHN,TRAVEL,move,26,12,"(29, 12)",100.0,22.0,"exit (29, 12) len=4 cost=4 risk_pen=0"
+26,T-800,ESCORT,move,19,12,JOHN,100.0,74.0,close up on John
+26,T-1000,PURSUE,move,18,6,"(23, 13)",120.0,100.0,"direct chase; est=(23, 13) d=14 stall=0"
+27,JOHN,REST,rest,26,12,None,100.0,27.0,"stamina 22 low, no threat nearby"
+27,T-800,ESCORT,move,20,12,JOHN,100.0,73.0,close up on resting John
+27,T-1000,PURSUE,move,19,6,"(23, 13)",120.0,100.0,"flank around T-800; est=(23, 13) d=12 stall=2"
+28,JOHN,REST,rest,26,12,None,100.0,32.0,"stamina 27 low, no threat nearby"
+28,T-800,ESCORT,move,21,12,JOHN,100.0,72.0,close up on resting John
+28,T-1000,PURSUE,move,21,6,"(23, 13)",120.0,100.0,"flank around T-800; est=(23, 13) d=11 stall=3"
+29,JOHN,REST,rest,26,12,None,100.0,37.0,"stamina 32 low, no threat nearby"
+29,T-800,ESCORT,move,22,12,JOHN,100.0,71.0,close up on resting John
+29,T-1000,PURSUE,move,22,6,"(23, 13)",120.0,100.0,"flank around T-800; est=(23, 13) d=9 stall=5"
+30,JOHN,REST,rest,26,12,None,100.0,42.0,"stamina 37 low, no threat nearby"
+30,T-800,ESCORT,move,23,12,JOHN,100.0,70.0,close up on resting John
+30,T-1000,PURSUE,move,24,6,"(23, 13)",120.0,100.0,"direct chase; est=(23, 13) d=8 stall=6"
+31,JOHN,FLEE,move,27,12,"(29, 12)",100.0,39.0,"exit (29, 12) len=3 cost=3 risk_pen=0"
+31,T-800,ESCORT,move,24,12,JOHN,100.0,69.0,close up on John
+31,T-1000,PURSUE,move,25,6,"(23, 13)",120.0,100.0,"flank around T-800; est=(23, 13) d=8 stall=8"
+32,JOHN,TRAVEL,move,28,12,"(29, 12)",100.0,36.0,"exit (29, 12) len=2 cost=2 risk_pen=0"
+32,T-800,ESCORT,move,25,12,JOHN,100.0,68.0,close up on John
+32,T-1000,PURSUE,move,27,6,"(26, 12)",120.0,100.0,"flank around T-800; est=(26, 12) d=7 stall=9"
+33,JOHN,TRAVEL,move,29,12,"(29, 12)",100.0,33.0,"exit (29, 12) len=1 cost=1 risk_pen=0"
+33,T-800,ESCORT,move,26,12,JOHN,100.0,67.0,close up on John
+33,T-1000,PURSUE,move,28,6,"(26, 12)",120.0,100.0,"flank around T-800; est=(26, 12) d=7 stall=1"
